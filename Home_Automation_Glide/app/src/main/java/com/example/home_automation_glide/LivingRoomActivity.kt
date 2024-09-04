@@ -1,12 +1,12 @@
-package com.example.homeautomationapp
+package com.example.home_automation_glide
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.homeautomationapp.databinding.ActivityLivingRoomBinding
+import com.example.home_automation_glide.databinding.ActivityLivingroomBinding
 
 class LivingRoomActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLivingRoomBinding
+    private lateinit var binding: ActivityLivingroomBinding
     private var isLight1On = false
     private var isLight2On = false
     private var isLight3On = false
@@ -15,8 +15,8 @@ class LivingRoomActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLivingRoomBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_living_room)
+        binding = ActivityLivingroomBinding.inflate(layoutInflater)
+        setContentView(R.layout.activity_livingroom)
 
         // Set up button listeners
         binding.buttonLight1.setOnClickListener {
