@@ -22,8 +22,28 @@ private lateinit var binding: ActivityMainBinding
 
         binding.buttonLivingRoom.setOnClickListener {
             val intent = Intent (this, LivingRoomActivity::class.java)
+            startActivity(intent)
         }
 
+        binding.buttonBedroom1.setOnClickListener {
+            val intent = Intent (this, Bedroom1Activity::class.java)
+            startActivity(intent)
+        }
+
+        binding.buttonBedroom2.setOnClickListener {
+            val intent = Intent (this, Bedroom2Activity::class.java)
+            startActivity(intent)
+        }
+
+        binding.buttonKitchen.setOnClickListener {
+            val intent = Intent (this, KitchenActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.buttonLivingRoom.setOnClickListener {
+            val intent = Intent (this, LivingRoomActivity::class.java)
+            startActivity(intent)
+        }
 
         val navView: BottomNavigationView = binding.navView
 
